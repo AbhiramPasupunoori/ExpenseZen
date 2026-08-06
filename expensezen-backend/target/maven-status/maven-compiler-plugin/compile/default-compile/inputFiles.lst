@@ -1,6 +1,11 @@
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/ExpenseZenApplication.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/AuthController.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/DatabaseHealthController.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/HealthController.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/request/LoginRequest.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/request/RegisterRequest.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/response/AuthResponse.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/response/UserResponse.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/entity/BaseEntity.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/entity/Budget.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/entity/Category.java
@@ -21,3 +26,8 @@
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/repository/SavingsGoalRepository.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/repository/TransactionRepository.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/repository/UserRepository.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/security/CustomUserDetailsService.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/security/JwtTokenService.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/security/SecurityConfig.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/security/SecurityErrorHandler.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/service/AuthService.java
