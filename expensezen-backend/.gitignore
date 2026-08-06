@@ -1,0 +1,20 @@
+# Maven
+target/
+
+# Local configuration
+.env
+application-local.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Log files
+*.log
+logs/
