@@ -1,3 +1,4 @@
 com/expensezen/EntityRepositoryTests.class
 com/expensezen/ExpenseZenApplicationTests.class
+com/expensezen/CategoryControllerTests.class
 com/expensezen/AuthControllerTests.class

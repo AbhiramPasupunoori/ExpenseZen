@@ -1,10 +1,13 @@
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/ExpenseZenApplication.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/AuthController.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/CategoryController.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/DatabaseHealthController.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/controller/HealthController.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/request/CategoryRequest.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/request/LoginRequest.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/request/RegisterRequest.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/response/AuthResponse.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/response/CategoryResponse.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/dto/response/UserResponse.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/entity/BaseEntity.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/entity/Budget.java
@@ -31,3 +34,5 @@
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/security/SecurityConfig.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/security/SecurityErrorHandler.java
 /Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/service/AuthService.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/service/CategoryService.java
+/Users/abhiram/Documents/GitHub/ExpenseZen/expensezen-backend/src/main/java/com/expensezen/service/DefaultCategoryService.java
