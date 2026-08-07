@@ -1,3 +1,4 @@
+com/expensezen/dto/request/TransactionRequest.class
 com/expensezen/repository/BudgetRepository.class
 com/expensezen/service/DefaultCategoryService.class
 com/expensezen/enums/GoalStatus.class
@@ -11,6 +12,7 @@ com/expensezen/service/AuthService.class
 com/expensezen/dto/request/LoginRequest.class
 com/expensezen/repository/CategoryRepository.class
 com/expensezen/repository/UserRepository.class
+com/expensezen/service/TransactionService.class
 com/expensezen/repository/TransactionRepository.class
 com/expensezen/security/SecurityErrorHandler.class
 com/expensezen/entity/Category.class
@@ -18,6 +20,7 @@ com/expensezen/enums/PaymentMethod.class
 com/expensezen/entity/Budget.class
 com/expensezen/exception/ApiError.class
 com/expensezen/dto/request/CategoryRequest.class
+com/expensezen/controller/TransactionController.class
 com/expensezen/service/CategoryService.class
 com/expensezen/entity/SavingsGoal.class
 com/expensezen/exception/DuplicateResourceException.class
@@ -27,10 +30,12 @@ com/expensezen/entity/Transaction.class
 com/expensezen/ExpenseZenApplication.class
 com/expensezen/dto/response/AuthResponse.class
 com/expensezen/entity/User.class
+com/expensezen/dto/response/TransactionResponse.class
 com/expensezen/security/JwtTokenService.class
 com/expensezen/enums/Role.class
 com/expensezen/controller/CategoryController.class
 com/expensezen/exception/GlobalExceptionHandler.class
+com/expensezen/dto/response/PageResponse.class
 com/expensezen/exception/BadRequestException.class
 com/expensezen/dto/response/CategoryResponse.class
 com/expensezen/dto/request/RegisterRequest.class
