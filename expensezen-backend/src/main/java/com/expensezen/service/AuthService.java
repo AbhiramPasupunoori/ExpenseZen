@@ -26,17 +26,20 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
     private final JwtTokenService jwtTokenService;
+    private final DefaultCategoryService defaultCategoryService;
 
     public AuthService(
             UserRepository userRepository,
             PasswordEncoder passwordEncoder,
             AuthenticationManager authenticationManager,
-            JwtTokenService jwtTokenService
+            JwtTokenService jwtTokenService,
+            DefaultCategoryService defaultCategoryService
     ) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
         this.jwtTokenService = jwtTokenService;
+        this.defaultCategoryService = defaultCategoryService;
     }
 
     @Transactional
@@ -60,6 +63,8 @@ public class AuthService {
         user.setEnabled(true);
 
         User savedUser = userRepository.save(user);
+
+        defaultCategoryService.createDefaultCategories(savedUser);
 
         return createAuthResponse(savedUser);
     }

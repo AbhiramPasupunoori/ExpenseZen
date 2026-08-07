@@ -28,4 +28,9 @@ public interface TransactionRepository
             LocalDate startDate,
             LocalDate endDate
     );
+
+    boolean existsByCategory_IdAndUser_Id(
+            Long categoryId,
+            Long userId
+    );
 }

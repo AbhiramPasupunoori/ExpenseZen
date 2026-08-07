@@ -43,6 +43,9 @@ public class Category extends BaseEntity {
     @Column(length = 50)
     private String icon;
 
+    @Column(nullable = false)
+    private boolean defaultCategory = false;
+
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
@@ -80,6 +83,14 @@ public class Category extends BaseEntity {
 
     public void setIcon(String icon) {
         this.icon = icon;
+    }
+
+    public boolean isDefaultCategory() {
+        return defaultCategory;
+    }
+
+    public void setDefaultCategory(boolean defaultCategory) {
+        this.defaultCategory = defaultCategory;
     }
 
     public User getUser() {
