@@ -1,0 +1,11 @@
+{
+    "postman.settings.dotenv-detection-notification-visibility": false,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.sourcePaths": [
+        "${workspaceFolder}/expensezen-backend/src/main/java",
+        "${workspaceFolder}/expensezen-backend/src/main/resources",
+        "${workspaceFolder}/expensezen-backend/src/test/java",
+        "${workspaceFolder}/expensezen-backend/src/test/resources"
+    ],
+    "java.project.outputPath": "${workspaceFolder}/expensezen-backend/target/classes"
+}
