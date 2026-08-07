@@ -6,9 +6,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface BudgetRepository extends JpaRepository<Budget, Long> {
+public interface BudgetRepository
+        extends JpaRepository<Budget, Long> {
 
-    List<Budget> findAllByUser_IdAndBudgetMonthAndBudgetYear(
+    List<Budget>
+    findAllByUser_IdAndBudgetMonthAndBudgetYearOrderByCategory_NameAsc(
             Long userId,
             Integer month,
             Integer year
@@ -25,6 +27,23 @@ public interface BudgetRepository extends JpaRepository<Budget, Long> {
             Long categoryId,
             Integer month,
             Integer year
+    );
+
+    boolean
+    existsByUser_IdAndCategory_IdAndBudgetMonthAndBudgetYear(
+            Long userId,
+            Long categoryId,
+            Integer month,
+            Integer year
+    );
+
+    boolean
+    existsByUser_IdAndCategory_IdAndBudgetMonthAndBudgetYearAndIdNot(
+            Long userId,
+            Long categoryId,
+            Integer month,
+            Integer year,
+            Long budgetId
     );
 
     boolean existsByCategory_IdAndUser_Id(
