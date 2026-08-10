@@ -138,4 +138,19 @@ public interface TransactionRepository
             @Param("startDate") LocalDate startDate,
             @Param("endDate") LocalDate endDate
     );
+
+    @Query("""
+            SELECT t
+            FROM Transaction t
+            WHERE t.user.id = :userId
+              AND t.transactionDate BETWEEN :startDate AND :endDate
+              AND (:type IS NULL OR t.type = :type)
+            ORDER BY t.transactionDate DESC, t.id DESC
+            """)
+    List<Transaction> findTransactionsForCsv(
+            @Param("userId") Long userId,
+            @Param("startDate") LocalDate startDate,
+            @Param("endDate") LocalDate endDate,
+            @Param("type") TransactionType type
+    );
 }

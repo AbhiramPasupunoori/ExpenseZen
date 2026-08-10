@@ -9,7 +9,6 @@ import com.expensezen.exception.BadRequestException;
 import com.expensezen.exception.ResourceNotFoundException;
 import com.expensezen.repository.TransactionRepository;
 import com.expensezen.repository.UserRepository;
-import com.expensezen.repository.projection.CategorySpendingProjection;
 import com.expensezen.repository.projection.MonthlyTrendProjection;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
