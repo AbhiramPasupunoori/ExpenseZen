@@ -1,6 +1,9 @@
 com/expensezen/repository/BudgetRepository.class
 com/expensezen/enums/GoalStatus.class
 com/expensezen/exception/ResourceNotFoundException.class
+com/expensezen/repository/projection/MonthlyTrendProjection.class
+com/expensezen/controller/DashboardController.class
+com/expensezen/dto/response/CategoryBreakdownResponse.class
 com/expensezen/service/DefaultCategoryService$CategoryTemplate.class
 com/expensezen/repository/SavingsGoalRepository.class
 com/expensezen/service/AuthService.class
@@ -10,8 +13,10 @@ com/expensezen/security/SecurityErrorHandler.class
 com/expensezen/dto/request/BudgetRequest.class
 com/expensezen/enums/PaymentMethod.class
 com/expensezen/exception/ApiError.class
+com/expensezen/dto/response/DashboardResponse.class
 com/expensezen/dto/request/CategoryRequest.class
 com/expensezen/controller/TransactionController.class
+com/expensezen/service/DashboardService.class
 com/expensezen/controller/AuthController.class
 com/expensezen/service/BudgetService.class
 com/expensezen/ExpenseZenApplication.class
@@ -29,7 +34,9 @@ com/expensezen/service/DefaultCategoryService.class
 com/expensezen/controller/DatabaseHealthController.class
 com/expensezen/security/CustomUserDetailsService.class
 com/expensezen/enums/BudgetStatus.class
+com/expensezen/repository/projection/CategorySpendingProjection.class
 com/expensezen/enums/TransactionType.class
+com/expensezen/dto/response/MonthlyTrendResponse.class
 com/expensezen/dto/request/LoginRequest.class
 com/expensezen/service/TransactionService.class
 com/expensezen/repository/TransactionRepository.class
