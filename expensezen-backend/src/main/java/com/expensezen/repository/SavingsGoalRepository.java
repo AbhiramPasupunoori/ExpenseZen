@@ -9,12 +9,7 @@ import java.util.Optional;
 public interface SavingsGoalRepository
         extends JpaRepository<SavingsGoal, Long> {
 
-    List<SavingsGoal> findAllByUser_IdOrderByCreatedAtDesc(
-            Long userId
-    );
+    List<SavingsGoal> findByUserIdOrderByCreatedAtDesc(Long userId);
 
-    Optional<SavingsGoal> findByIdAndUser_Id(
-            Long goalId,
-            Long userId
-    );
+    Optional<SavingsGoal> findByIdAndUserId(Long id, Long userId);
 }
