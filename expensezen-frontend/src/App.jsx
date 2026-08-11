@@ -1,7 +1,9 @@
 import { Route, Routes } from "react-router";
 import GuestRoute from "./components/auth/GuestRoute";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import DashboardLayout from "./components/layout/DashboardLayout";
 import DashboardPage from "./pages/DashboardPage";
+import FeaturePlaceholderPage from "./pages/FeaturePlaceholderPage";
 import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -18,7 +20,47 @@ function App() {
       </Route>
 
       <Route element={<ProtectedRoute />}>
-        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route element={<DashboardLayout />}>
+          <Route path="/dashboard" element={<DashboardPage />} />
+
+          <Route
+            path="/transactions"
+            element={
+              <FeaturePlaceholderPage title="Transactions" />
+            }
+          />
+
+          <Route
+            path="/categories"
+            element={
+              <FeaturePlaceholderPage title="Categories" />
+            }
+          />
+
+          <Route
+            path="/budgets"
+            element={<FeaturePlaceholderPage title="Budgets" />}
+          />
+
+          <Route
+            path="/savings-goals"
+            element={
+              <FeaturePlaceholderPage title="Savings goals" />
+            }
+          />
+
+          <Route
+            path="/recurring-transactions"
+            element={
+              <FeaturePlaceholderPage title="Recurring transactions" />
+            }
+          />
+
+          <Route
+            path="/reports"
+            element={<FeaturePlaceholderPage title="Reports" />}
+          />
+        </Route>
       </Route>
 
       <Route path="*" element={<NotFoundPage />} />

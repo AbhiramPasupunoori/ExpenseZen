@@ -1,4 +1,9 @@
-import { useCallback, useMemo, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import {
   loginRequest,
   registerRequest,
@@ -12,6 +17,24 @@ import AuthContext from "./AuthContext";
 
 function AuthProvider({ children }) {
   const [session, setSession] = useState(() => getSession());
+
+  useEffect(() => {
+    function handleUnauthorized() {
+      setSession(null);
+    }
+
+    window.addEventListener(
+      "expensezen:unauthorized",
+      handleUnauthorized,
+    );
+
+    return () => {
+      window.removeEventListener(
+        "expensezen:unauthorized",
+        handleUnauthorized,
+      );
+    };
+  }, []);
 
   const login = useCallback(async (credentials) => {
     const result = await loginRequest(credentials);
