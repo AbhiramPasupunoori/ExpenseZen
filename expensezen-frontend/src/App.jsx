@@ -9,6 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import RegisterPage from "./pages/RegisterPage";
 import SetupPage from "./pages/SetupPage";
 import TransactionsPage from "./pages/TransactionsPage";
+import CategoriesPage from "./pages/CategoriesPage";
 
 function App() {
   return (
@@ -31,9 +32,7 @@ function App() {
 
           <Route
             path="/categories"
-            element={
-              <FeaturePlaceholderPage title="Categories" />
-            }
+            element={<CategoriesPage />}
           />
 
           <Route
