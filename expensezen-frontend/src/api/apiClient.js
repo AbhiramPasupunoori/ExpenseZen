@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getToken, removeToken } from "../utils/tokenStorage";
+import { getToken, removeSession } from "../utils/tokenStorage";
 
 const apiClient = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || "/api",
@@ -31,7 +31,7 @@ apiClient.interceptors.response.use(
 
   (error) => {
     if (error.response?.status === 401) {
-      removeToken();
+      removeSession();
     }
 
     return Promise.reject(error);

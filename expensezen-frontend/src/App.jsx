@@ -1,32 +1,25 @@
 import { Route, Routes } from "react-router";
-import SetupPage from "./pages/SetupPage";
+import GuestRoute from "./components/auth/GuestRoute";
+import ProtectedRoute from "./components/auth/ProtectedRoute";
+import DashboardPage from "./pages/DashboardPage";
+import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
-
-function PlaceholderPage({ title }) {
-  return (
-    <main className="placeholder-page">
-      <div>
-        <h1>{title}</h1>
-        <p>This page will be created in Phase 11.</p>
-      </div>
-    </main>
-  );
-}
+import RegisterPage from "./pages/RegisterPage";
+import SetupPage from "./pages/SetupPage";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<SetupPage />} />
 
-      <Route
-        path="/login"
-        element={<PlaceholderPage title="Login" />}
-      />
+      <Route element={<GuestRoute />}>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+      </Route>
 
-      <Route
-        path="/register"
-        element={<PlaceholderPage title="Create account" />}
-      />
+      <Route element={<ProtectedRoute />}>
+        <Route path="/dashboard" element={<DashboardPage />} />
+      </Route>
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
