@@ -10,6 +10,7 @@ import RegisterPage from "./pages/RegisterPage";
 import SetupPage from "./pages/SetupPage";
 import TransactionsPage from "./pages/TransactionsPage";
 import CategoriesPage from "./pages/CategoriesPage";
+import BudgetsPage from "./pages/BudgetsPage";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
 
           <Route
             path="/budgets"
-            element={<FeaturePlaceholderPage title="Budgets" />}
+            element={<BudgetsPage />}
           />
 
           <Route
