@@ -1,0 +1,146 @@
+.reports-page {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.reports-page-header {
+  margin-bottom: 24px;
+}
+
+.reports-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reports-title svg {
+  color: var(--primary);
+}
+
+.reports-title h1,
+.reports-card h2 {
+  margin: 0;
+}
+
+.reports-page-header p,
+.reports-card-heading p,
+.reports-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.reports-card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.reports-card-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.reports-card-heading span {
+  align-self: flex-start;
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.12);
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+.reports-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  align-items: end;
+  gap: 14px;
+}
+
+.reports-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.reports-form input,
+.reports-form select {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 11px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--text);
+  background: #0b1727;
+}
+
+.reports-form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 43px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #052e16;
+  background: var(--primary);
+  font-weight: 750;
+}
+
+.reports-form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.reports-note {
+  font-size: 0.82rem;
+}
+
+.reports-success,
+.reports-error {
+  margin-bottom: 18px;
+  padding: 12px 15px;
+  border-radius: 11px;
+}
+
+.reports-success {
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.reports-error {
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+@media (max-width: 860px) {
+  .reports-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reports-form button {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .reports-card {
+    padding: 18px;
+  }
+
+  .reports-form {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-form button {
+    grid-column: auto;
+  }
+}
