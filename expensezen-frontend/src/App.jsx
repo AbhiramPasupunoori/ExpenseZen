@@ -7,6 +7,7 @@ import FeaturePlaceholderPage from "./pages/FeaturePlaceholderPage";
 import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import RegisterPage from "./pages/RegisterPage";
+import RecurringTransactionsPage from "./pages/RecurringTransactionsPage";
 import SetupPage from "./pages/SetupPage";
 import TransactionsPage from "./pages/TransactionsPage";
 import CategoriesPage from "./pages/CategoriesPage";
@@ -49,9 +50,7 @@ function App() {
 
           <Route
             path="/recurring-transactions"
-            element={
-              <FeaturePlaceholderPage title="Recurring transactions" />
-            }
+            element={<RecurringTransactionsPage />}
           />
 
           <Route
